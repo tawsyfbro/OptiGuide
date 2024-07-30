@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 from google.cloud import texttospeech
 
 from google.oauth2.service_account import Credentials
+from google.oauth2 import service_account
 
 # Function to reset Streamlit state
 
