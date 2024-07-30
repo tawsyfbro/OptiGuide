@@ -1,12 +1,9 @@
 import streamlit as st
 import google.generativeai as genai
-from gtts import gTTS
-import os
-from io import BytesIO
-import base64
+
 from streamlit_option_menu import option_menu
 from google.cloud import texttospeech
-from google.cloud import speech
+
 from google.oauth2.service_account import Credentials
 
 # Function to reset Streamlit state
