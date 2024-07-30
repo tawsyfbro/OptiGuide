@@ -11,11 +11,15 @@ from google.oauth2.service_account import Credentials
 
 # Function to reset Streamlit state
 
-GOOGLE_API_KEY = 'AIzaSyBJk0fGQlA54CgIP7tH9DYNzn1xzOUofe4'
+
+
+GOOGLE_API_KEY = st.secrets["API_KEY"]
+
 genai.configure(api_key=GOOGLE_API_KEY)
 
-credentials = Credentials.from_service_account_file(
-    'avian-serenity-427813-m3-21c0537027ca.json')
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["client_ts"]
+)
 
 # def reset_state():
 #     for key in st.session_state.keys():
