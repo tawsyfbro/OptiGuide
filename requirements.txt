@@ -1,5 +1,5 @@
 streamlit
 google.generativeai
 streamlit_option_menu
-google.cloud
+google-cloud-texttospeech
 google.oauth2.service_account
